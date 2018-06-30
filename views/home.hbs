@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+    </head>
+<body>
+    {{> header}}
+
+<h1>{{welcomeMessage}}</h1>
+<p>My first paragraph.</p>
+<footer>
+    <p>copyRight {{name}}</p>
+    <p> i like</p>
+    <ul>
+        {{#each likes}}
+        <li>
+          {{0}}
+        </li>
+        <li>
+          {{1}}
+        </li>
+        {{/each}}
+        {{> footer}}
+    </ul>
+</footer>
+
+</body>
+</html>
