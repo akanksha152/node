@@ -70,4 +70,7 @@ app.listen(port, () => {
 //ssh -T git @github.com ===for authentication
 //heroku login
 //heroku keys:add  -- to add ssh keys to heroku
-//ssh  -v git@heroku.com (authetication succeed , now we are gud to go)
+//ssh  -v git@heroku.com (authetication succeed , now we are gud to go)//env
+//heroku craete
+//git push heroku
+//heroku open
