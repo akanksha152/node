@@ -1,5 +1,6 @@
 const express = require('express');
 const hbs = require('hbs');
+const port = process.env.PORT || 3000;
 
 var app = express();
 hbs.registerPartials(__dirname+'/views/partials');
@@ -54,6 +55,19 @@ app.get('/bad', (req, res)=>{
     })
 } )
 
-app.listen(3000, () => {
-    console.log('server is up on port: 3000');
+app.listen(port, () => {
+    console.log(`server is up on port: ${port}`);
 });
+
+
+//git
+//ssh -key list  ls -al ~/.ssh
+//ssh-keygen -t rsa -b 4096 -C 'akanksharma152@gmail.com'
+// eval "$(ssh-agent -s)"  --to get process id
+//ssh-add ~/.ssh/id_rsa
+// pbcopy < ~/.ssh/id_rsa
+//copy to githun ssh -key
+//ssh -T git @github.com ===for authentication
+//heroku login
+//heroku keys:add  -- to add ssh keys to heroku
+//ssh  -v git@heroku.com (authetication succeed , now we are gud to go)
